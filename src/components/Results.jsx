@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Results = ({results}) => {
+const Results = ({ results }) => {
   return (
-    <div>{
-        results && results.map(result => {
-            <div key={result.id}>{result.original_title}</div>
-        })
-        }</div>
-  )
-}
+    <div>
+      {results &&
+        results.map((result) => {
+          <div key={result.id}>{result.original_title}</div>;
+        })}
+    </div>
+  );
+};
 
-export default Results
+export default Results;

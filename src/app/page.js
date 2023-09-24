@@ -15,7 +15,7 @@ export default async function Home({searchParams}) {
   //   console.log(Error)
   //   throw new Error("Failed to load movies");
   // }
-  const data = res.json();
+  const data = await res.json();
   const results = data.results;
 
   return (
