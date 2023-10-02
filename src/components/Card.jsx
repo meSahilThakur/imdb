@@ -19,7 +19,7 @@ const Card = ({result}) => {
                 <p>{result.overview.substring(0,40)}...</p>
                 <h2 className='text-lg font-bold'>{result.title || result.name}</h2>
                 <p className='flex items-center'>{result.first_air_date || result.release_date}
-                <AiFillHeart className=' text-red-500 ml-3 mr-1' />{result.vote_count}
+                <AiFillHeart className=' text-red-500 ml-3 mr-1' />{result.vote_count} {" "}
                 </p>
                 
             </div>
